@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5138538476441201773, guid: 69731b22193597442a3bb5a1de025b75, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: baf9274b0a79f1946b733acc080eca88, type: 2}
     - target: {fileID: 5892730644237986081, guid: 69731b22193597442a3bb5a1de025b75, type: 3}
       propertyPath: m_Mesh
       value: 
