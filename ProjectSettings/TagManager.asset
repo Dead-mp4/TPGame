@@ -8,6 +8,7 @@ TagManager:
   - LeadWall
   - LeadCeiling
   - Ceiling
+  - Footsteps
   layers:
   - Default
   - TransparentFX
