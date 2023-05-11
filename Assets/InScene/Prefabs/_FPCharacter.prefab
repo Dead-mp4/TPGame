@@ -146,6 +146,10 @@ MonoBehaviour:
   shortTeleTarget: {fileID: 0}
   Player: {fileID: 3020366304088509116}
   cannotShortTele: 0
+  meterSliderShort: {fileID: 0}
+  sLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &6494884184540921790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +166,11 @@ MonoBehaviour:
   longOnCooldown: 0
   longCooldown: 5
   m_long: 324
-  Player: {fileID: 3020366304088509116}
+  longTeleRange: 1000
+  meterSliderLong: {fileID: 0}
+  layers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &3020366304796178266
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae9077f5d1c7fdd4b9bb17d48eb56133, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.715
+      value: -0.57
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae9077f5d1c7fdd4b9bb17d48eb56133, type: 3}
       propertyPath: m_LocalPosition.y
