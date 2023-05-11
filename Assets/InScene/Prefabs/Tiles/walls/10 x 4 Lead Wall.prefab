@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5138538476441201773}
   - component: {fileID: 7190918127618418427}
   - component: {fileID: 2622862095610986696}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: 10 x 4 Lead Wall
   m_TagString: LeadWall
   m_Icon: {fileID: 0}
