@@ -15,7 +15,7 @@ public class ShortRangedTeleport : MonoBehaviour
     public GameObject Player;
     public bool cannotShortTele;
 
-
+   
     void Start()
     {
         shortOnCooldown = false;
@@ -23,11 +23,14 @@ public class ShortRangedTeleport : MonoBehaviour
     void Update()
     {
         ShortTeleport();
+       
     }
     void ShortTeleport()
     {
+        
         if (Input.GetKey(m_short) && shortOnCooldown == false) // Activates Short-Ranged Teleportation
         {
+      
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // Finding point to teleport to
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 5))

@@ -47,8 +47,9 @@ public class FPSMovement : MonoBehaviour
     public float headRoom;
     private bool crouchSwitched;
 
+    //----------NOT IN OG SCRIPT------------
     public AudioSource FootstepsSound;
-
+    //--------------------------------------
 
     void Awake()
     {
@@ -66,17 +67,25 @@ public class FPSMovement : MonoBehaviour
     // Check if a button is pressed
     void MoveInputCheck()
     {
-        if (m_isGrounded = true)
-        {
+
+ //---------------------------------------NOT IN GO SCRIPT------------------------------------------------------------------------
+ //------------------------------ONLY ADDS A FOOT STEP AUDIO WHEN MOVING----------------------------------------------------------
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
+              if (m_isGrounded == true)
             {
                 FootstepsSound.enabled = true;
             }
-            else
+              else
             {
                 FootstepsSound.enabled = false;
             }
+            }
+        else
+        {
+            FootstepsSound.enabled = false;
         }
+ //--------------------------------------------------------------------------------------------------------------------------
 
         float x = Input.GetAxis("Horizontal"); // Gets the x input value for the Gameobject vector
         float z = Input.GetAxis("Vertical"); // Gets the z input value for the Gameobject vector

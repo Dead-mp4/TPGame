@@ -126,6 +126,7 @@ MonoBehaviour:
   m_cameraCrouchPoint: {fileID: 8809921770960428649}
   lerpRate: 4
   headRoom: 0.3
+  FootstepsSound: {fileID: 0}
 --- !u!114 &3596247153413738113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,10 +441,10 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
-  m_Range: 50
+  m_Intensity: 50
+  m_Range: 100
   m_SpotAngle: 50.30225
-  m_InnerSpotAngle: 9.153001
+  m_InnerSpotAngle: 25.705204
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0

@@ -23,6 +23,8 @@ public class ShortRangedCooldown : MonoBehaviour
     void Update()
     {
         ShortTeleport();
+
+    
     }
 
     void ShortTeleport()
@@ -30,7 +32,7 @@ public class ShortRangedCooldown : MonoBehaviour
         if (Input.GetKey(m_short) && shortOnCooldown == false)
         {
             shortOnCooldown = true;
-            baseCooldown = shortCooldown;
+            baseCooldown = shortCooldown;    
         }
         if (shortOnCooldown == true)
         {
