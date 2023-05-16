@@ -5,6 +5,7 @@
 
 public class MouseLook : MonoBehaviour
 {
+
     public float m_sensivity = 50f; // mouse sensitivity
     public float m_clampAngle = 90f; // This limits our look up rotation
     public Transform m_playerObject; // Sotre the player controller
@@ -17,15 +18,15 @@ public class MouseLook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked; // Lock our cursor to the center of screen
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
-    {
-        GetMousePos(); // get the mouse position
-        ClampUpRotatation(); // clamp the loop up
-        LookAt(); // look at mouse position
+    {        
+                GetMousePos(); // get the mouse position
+                ClampUpRotatation(); // clamp the loop up
+                LookAt(); // look at mouse position            
     }
 
     // Get mouse position
